@@ -183,3 +183,41 @@ header .content-fit nav ul{
         position: absolute;
     }
 }
+
+.logo {
+  font-size: 2rem; /* Increase size */
+  font-weight: bold;
+  color: #facc15;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li,
+.nav-menu li a {
+  font-size: 1rem;
+  color: #facc15;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.nav-menu li:hover,
+.nav-menu li a:hover {
+  transform: scale(1.05);
+  color: #ffdd33;
+}
