@@ -184,16 +184,6 @@ header .content-fit nav ul{
     }
 }
 
-.logo {
-  font-size: 2rem; /* Increase size */
-  font-weight: bold;
-  color: #facc15;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-}
 
 .nav-menu {
   display: flex;
