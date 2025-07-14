@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import bgImage from "../assets/bg.png"; // make sure path is correct
+import { fontFamily } from "@mui/system";
 
 const AuthCard = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -65,6 +66,10 @@ const handleLoginSubmit = async (e) => {
 
   return (
     <div style={styles.wrapper}>
+      <div style={styles.logo}>🐝 Buzz.AI</div>
+      <p style={styles.tagline}>Empowering Beehives with AI</p>
+       
+
       <div style={{ ...styles.card, transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)" }}>
         {/* Front (Login) */}
         <div style={{ ...styles.face, ...styles.front }}>
@@ -110,6 +115,7 @@ const styles = {
     minHeight: '100vh',
     display: 'flex',
     justifyContent: 'center',
+    
     alignItems: 'center',
     backgroundImage: `url(${bgImage})`,
     backgroundSize: 'cover',
@@ -188,7 +194,55 @@ backBtn: {
   marginBottom: "10px",
   fontSize: "13px",
   cursor: "pointer"
+},
+logo: {
+  position: 'absolute',
+  top: '20px',
+  left: '30px',
+  fontSize: '2rem',
+  fontWeight: 'bold',
+  color:  '#b8860b',
+  display: 'flex',
+  alignItems: 'center',
+  gap: '10px',
+  fontFamily: "'Poppins', sans-serif",
+  textShadow: '1px 1px 4px rgba(0,0,0,0.3)',
+  zIndex: 999,
+},
+tagline: {
+  position: 'absolute',
+  top: '60px',
+  left: '30px',
+  fontSize: '2rem',
+  fontFamily:'times-new-roman',
+  // color: '#1a1a1a', // dark blackish
+  color: '#800080',
+textShadow: '1px 1px 4px rgba(255, 255, 255, 0.2)',
+
+  fontFamily: "'Poppins', sans-serif",
+  fontStyle: 'italic',
+  fontWeight: 600,
+  // textShadow: '1px 1px 3px rgba(255, 255, 255, 0.3)',
+},
+leftSide: {
+  marginRight: '40px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+leftImage: {
+  width: '200px',
+  height: 'auto',
+  objectFit: 'contain',
+  filter: 'drop-shadow(0px 0px 6px #444)',
 }
+
+
+
+
+
+
 
 };
 
