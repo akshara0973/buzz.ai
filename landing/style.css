@@ -100,7 +100,7 @@ header .content-fit nav ul{
 }
 .section .content-fit .title {
     font-family: "devil breeze";
-    font-size: 5em;
+    font-size: 3rem;
     font-weight: bold;
 }
 #description .content-fit {
@@ -221,3 +221,15 @@ header .content-fit nav ul{
   transform: scale(1.05);
   color: #ffdd33;
 }
+
+.quote {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #facc15;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  font-family: 'Poppins', cursive;
+}
+
