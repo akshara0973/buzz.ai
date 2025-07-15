@@ -67,7 +67,7 @@ const handleLoginSubmit = async (e) => {
   return (
     <div style={styles.wrapper}>
       <div style={styles.logo}>🐝 Buzz.AI</div>
-      <p style={styles.tagline}>Empowering Beehives with AI</p>
+      {/* <p style={styles.tagline}>Empowering Beehives with AI</p> */}
        
 
       <div style={{ ...styles.card, transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)" }}>
@@ -237,12 +237,6 @@ leftImage: {
   objectFit: 'contain',
   filter: 'drop-shadow(0px 0px 6px #444)',
 }
-
-
-
-
-
-
 
 };
 
