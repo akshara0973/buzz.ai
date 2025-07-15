@@ -184,6 +184,16 @@ header .content-fit nav ul{
     }
 }
 
+.logo {
+  font-size: 2rem; /* Increase size */
+  font-weight: bold;
+  color: #facc15;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
 
 .nav-menu {
   display: flex;
@@ -244,4 +254,62 @@ header .content-fit nav ul{
   text-align: right;
   font-family: 'Poppins', cursive;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+  #intro .content-fit,
+  #description .content-fit {
+    flex-direction: column !important;
+    gap: 2rem;
+    padding: 4em 1em;
+  }
+
+  #intro .des,
+  #description .des {
+    text-align: center;
+  }
+
+  .section .number {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .section .content-fit .title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #description .title {
+    font-size: 2.5em;
+  }
+
+  #banner .title {
+    font-size: 2.5em;
+  }
+
+  #contact table {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  #contact .sign {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1b1b1b;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  header .content-fit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
